@@ -14,7 +14,7 @@ namespace Tyuiu.KosyakovDS.Sprint5.Task0.V24.Test
 
             bool fileExists = fileInfo.Exists;
             bool wait = true;
-
+            
             Assert.AreEqual(wait, fileExists);
         }
     }
