@@ -8,7 +8,7 @@ namespace Tyuiu.KosyakovDS.Sprint5.Task1.V3.Lib
     {
         public string SaveToFileTextData(int startValue, int stopValue)
         {
-            string path = Path.Combine(Directory.GetCurrentDirectory(), "OutPutFileTask1.txt");
+            string path = Path.GetTempFileName();
 
             FileInfo fileInfo = new FileInfo(path);
             bool fileExists = fileInfo.Exists;
