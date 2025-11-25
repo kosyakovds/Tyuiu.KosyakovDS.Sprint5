@@ -1,7 +1,7 @@
 ﻿using System.IO;
-using Tyuiu.KosyakovDS.Sprint5.Task1.V3.Lib;
+using Tyuiu.KosyakovDS.Sprint5.Task2.V26.Lib;
 
-namespace Tyuiu.KosyakovDS.Sprint5.Task1.V3.Test
+namespace Tyuiu.KosyakovDS.Sprint5.Task2.V26.Test
 {
     [TestClass]
     public class DataServiceTest
@@ -9,7 +9,7 @@ namespace Tyuiu.KosyakovDS.Sprint5.Task1.V3.Test
         [TestMethod]
         public void CheckedExistsFile()
         {
-            string path = Path.GetTempFileName();
+            string path = Path.Combine(Path.GetTempPath(), "OutPutFileTask2.csv");
             FileInfo fileInfo = new FileInfo(path);
 
             bool fileExists = fileInfo.Exists;
